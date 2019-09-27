@@ -217,7 +217,7 @@ header p{
 
     .about-image {
         /*Your code here */
-        grid-column: 2 / span 2;
+        grid-column: 1 / -1;
         grid-row: 3;
         max-height: 700px;
         /*FIXME if image is over 700px it should nto be shown */
@@ -276,7 +276,21 @@ header p{
 
     }
 
+    .text-block {
+        /*Your code here */
+        justify-self: center;
+        align-self: center;
+        font-size: xx-small;
+
+        /* Provided */
+        background-color: rgba(255, 255, 255, .8);
+        border: 10px solid black;
+        padding: 30px;
+    }
+
 }  /*End the media query*/
+
+/* ----------------------------------------------------------------- */
 
 /* reduce motion */
 @media screen and (prefers-reduced-motion: reduce){
