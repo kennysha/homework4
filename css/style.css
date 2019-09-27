@@ -217,7 +217,7 @@ header p{
 
     .about-image {
         /*Your code here */
-        grid-column: 1 / -1;
+        grid-column: 2 / span 2;
         grid-row: 3;
         max-height: 700px;
         /*FIXME if image is over 700px it should nto be shown */
