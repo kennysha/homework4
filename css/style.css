@@ -78,7 +78,7 @@ footer{
     /*Your code here  */
     display: grid;
     grid-template-columns: 100px auto 100px;
-    grid-row-gap: 15px; /*FIXME*/
+    grid-row-gap: 15px;
 
     /*Provided*/
     grid-template-rows: 30px auto auto auto auto auto 100px; 
@@ -139,7 +139,6 @@ header p{
     grid-column: 1 / -1;
     grid-row: 4;
     max-height: 700px;
-    /*FIXME any image over 700px should not be shown */
     overflow: hidden;
 }
 
@@ -154,7 +153,6 @@ header p{
     grid-column: 1 / -1;
     grid-row: 5;
     max-height: 700px;
-    /*FIXME any image over 700 should be hidden */
     overflow: hidden;
 }
 
@@ -169,7 +167,6 @@ header p{
     grid-column: 1 / -1;
     grid-row: 6;
     max-height: 700px;
-    /*FIXME any image over 700px should NOT be shown */
     overflow: hidden;
 }
 
@@ -179,17 +176,16 @@ header p{
    grid-row: 6;
 }
 
-.text-block{
-
-   /*Your code here */
-   justify-self: center; /*FIXME*/
-   align-self: center;
-
-
-   /* Provided */
-   background-color: rgba(255, 255, 255, .8);
-   border: 10px solid black;
-   padding: 30px;
+/* makes mobile view text smaller */
+.text-block {
+    /*Your code here */
+    justify-self: center;
+    align-self: center;
+    /*font-size: xx-small;*/
+    /* Provided */
+    background-color: rgba(255, 255, 255, .8);
+    border: 10px solid black;
+    padding: 30px;
 }
 
 /* ------------------------------------------------------------------- */
@@ -220,7 +216,6 @@ header p{
         grid-column: 2 / span 2;
         grid-row: 3;
         max-height: 700px;
-        /*FIXME if image is over 700px it should nto be shown */
         overflow: hidden;
     }
 
@@ -235,7 +230,6 @@ header p{
         grid-column: 3 / span 2;
         grid-row: 4;
         max-height: 700px;
-        /*FIXME if image is over 700px it should nto be shown */
         overflow: hidden;
     }
 
@@ -250,7 +244,6 @@ header p{
         grid-column: 2 / span 2;
         grid-row: 5;
         max-height: 700px;
-        /*FIXME if image is over 700px it should nto be shown */
         overflow: hidden;
     }
 
@@ -265,7 +258,6 @@ header p{
         grid-column: 3 / span 2;
         grid-row: 6;
         max-height: 700px;
-        /*FIXME if image is over 700px it should nto be shown */
         overflow: hidden;
     }
 
@@ -280,13 +272,14 @@ header p{
         /*Your code here */
         justify-self: center;
         align-self: center;
-        font-size: xx-small;
+        /*font-size: initial;*/
 
         /* Provided */
         background-color: rgba(255, 255, 255, .8);
         border: 10px solid black;
         padding: 30px;
     }
+
 
 }  /*End the media query*/
 
